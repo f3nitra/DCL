@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DIGI COUNT LAB</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js'></script>
+</head>
+
+<body>
+    <!-- HAUT DE PAGE-->
+    <header>
+        <div id="menu-nav">
+            <ul>
+                <li class="btn">
+                    <a href="#">
+                        ACCUEIL
+                    </a>
+                </li>
+                <li class="btn">
+                    <a href="a-propos.html">
+                        A PROPOS
+                    </a>
+                </li>
+                <li class="btn">
+                    <a href="services.html">
+                        NOS SERVICES
+                    </a>
+                </li>
+                <li class="btn">
+                    <a href="equipe.html">
+                        NOTRE EQUIPE
+                    </a>
+                </li>
+                <li class="btn">
+                    <a href="contacts.html">
+                        CONTACTS
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- <img src="E:\Projects\Njaka\img\pexels-toni-cuenca-585752.jpg" alt="" style="width:1500px;height:1000px;"> -->
+    <!-- MENU DE NAVIGATION -->
+
+
+    <!--CONTENU SOUS FORME DE BOITE-->
+
+    <div id="content">
+        <div class="firstbox">
+            <h1>BIENVENUE SUR DIGI COUNT LAB</h1>
+            <p>DCL est une boîte de saisie et de traitement de données informatiques <br> qui collabore avec plusieurs acteurs d’externalisation pour vous fournir des solutions d’externalisation comptable.</p>
+
+            <div>
+                <button class="button more" onclick="window.location.href='services.html';">En savoir plus</button>
+            </div>
+        </div>
+    </div>
+    <div id="content-2">
+        <div class="secondbox-text">
+            <h1>Pourquoi nous choisir ? </h1>
+            <p>Les avantages de DCL se résument en 4 mots:</p>
+
+        </div>
+
+        <div class="secondbox">
+            <button>1</button>
+            <h1>Compétences</h1>
+            <p>Dirigé d’une main de fer par deux professionnels aguerris de la comptabilité française, notre équipe est formée en interne au préalable et en permanence pour assurer une évolution perpétuelle.</p>
+        </div>
+
+        <div class="secondbox">
+            <button>2</button>
+            <h1>Partenariat</h1>
+            <p>DCL exécute ses missions dans le concept de partenariat mutuel et accorde une flexibilité de paiement et des tarifs très compétitifs visant à réduire considérablement leur coût de production.</p>
+        </div>
+
+        <div class="secondbox">
+            <button>3</button>
+            <h1>Disponibilité</h1>
+            <p>Des responsables de missions joignables par Skype ou par Téléphone.Nous disposons à tout moment d’une équipe de réserve pour intervenir en urgence.</p>
+        </div>
+
+        <div class="secondbox">
+            <button>4</button>
+            <h1>Déontologie</h1>
+            <p>DCL ainsi que son personnel et ses collaborateurs s’interdisent, directement ou indirectement, de divulguer des informations concernant les cabinets partenaires ou ses clients à des tiers ou de prendre contact de quelque façon que ce soit
+                avec les clients entreprises des cabinets clients.</p>
+        </div>
+    </div>
+
+    <div id="content-3">
+        <div class="items">
+            <button type="button" class="collapsible">Vous intervenez sur quel type de dossier?</button>
+            <div class="content">
+                <p>Nous intervenons généralement sur les dossiers clients de type TPE/PME pour toutes formes juridiques et tous types d’activités. </p>
+            </div>
+            <button type="button" class="collapsible">A combien s'élève votre capacité de production?</button>
+            <div class="content">
+                <p>Nous avons la capacité de gérer plus de 300 dossiers mensuels dans l’immédiat et disposons de ressources nécessaires pour la mise en place d’une éventuelle extension dans un délais maximum de 30 jours</p>
+            </div>
+            <button type="button" class="collapsible">Vous utilisez quel genre de logiciel pour vos traitements?</button>
+            <div class="content">
+                <p>Nous utilisons couramment les logiciels les plus populaires comme COALA et QUADRATUS pour les traitements en local, ainsi que tous logiciels de type SAAS pour les traitements en ligne</p>
+            </div>
+            <button type="button" class="collapsible">Quelles sont les procédures à suivre?</button>
+            <div class="content">
+                <p>Vous n’avez qu’à nous transmettre les documents à travers des services cloud : drive , dropbox, smash …, nous pouvons traiter directement à travers un accès à votre logiciel ou par renvoi de fichier FEC.</p>
+            </div>
+            <button type="button" class="collapsible">Quels sont vos tarifs?</button>
+            <div class="content">
+                <p>Nous facturons généralement à la ligne comptable à partir de 0,07€ ou par forfait mensuel (-20%) de 1000€/20000 lignes ce qui équivaut à la gestion mensuelle de plus d’une cinquantaine (+50) de dossiers de taille moyenne. </p>
+            </div>
+            <button type="button" class="collapsible">J'ai besoin de plus de précisions!</button>
+            <div class="content">
+                <p>N’hésitez pas à fixer un rendez-vous pour une vidéo-conférence avec nos 2 managers, nous serions ravis de vous accueillir et de vous exposer d’autre avantage commerciale.</p>
+            </div>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+        <div class="formulaire">
+            <div class="container">
+                <form action="#">
+
+                    <label for="fname">Nom*</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Votre nom complet">
+
+                    <label for="email">Adresse mail*</label>
+                    <input type="text" id="email" name="email" placeholder="Votre adresse mail">
+
+
+
+                    <label for="subject">Commentaires</label>
+                    <textarea id="subject" name="subject" placeholder="Ecrivez quelque chose..." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIED DE PAGE-->
+    <footer>
+        <div id="footer">
+            <div class="coordonnees">
+                <p>SARL HARISON SEHENO <br> Lot IVH 76 Mandialaza Antananarivo - Madagascar <br> +261 34 53 151 26</p>
+            </div>
+            <div class="coordonnees">
+                <p>DIGITAL ACCOUNTING LABORATORY <br> RCS : 2022B00459 <br> NIF : 5 011 765 295 <br> STAT : 63114 11 2022 10471</p>
+            </div>
+            <div class="coordonnees">
+                <p>Contactez-nous :</p>
+                <a href="https://www.facebook.com/groups/255276259799097"><img src="img/linkedin.png" alt="" style="width: 30px;height:30px;"></a>
+                <a href="https://www.linkedin.com/company/harison-seheno/?viewAsMember=true"><img src="img/facebook.png" alt="" style="width: 30px;height:30px;"></a>
+                <a href="skype:njaka.elie?call"><img src="img/skype.png" alt="" style="width: 30px;height:30px;"></a>
+                <a href="mailto:info@digicountlab.online;?subject = Prise de rendez-vous&body = Message"><img src="img/email.png" alt="" style="width: 30px;height:30px;"></a>
+            </div>
+            <div class="coordonnees">
+                <p>DCL &copy; 2022</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
+
+<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Pixel perfect - Flaticon</a>
